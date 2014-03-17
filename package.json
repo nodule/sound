@@ -1,0 +1,28 @@
+{
+  "name": "nodule-sound",
+  "description": "Sound for Chiχ",
+  "author": "Rob Halff <rob.halff@gmail.com>",
+  "version": "0.0.2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/sound.git"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "main": "x",
+  "scripts": {
+    "test": "chit -r"
+  },
+  "devDependencies": {
+    "chit": "0.x.x"
+  },
+  "chix": {
+    "name": "sound",
+    "color": "rgb(35,116,136)"
+  },
+  "dependencies": {
+    "alert": "0.x.x"
+  }
+}

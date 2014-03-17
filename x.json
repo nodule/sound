@@ -1,0 +1,59 @@
+{
+  "name": "sound",
+  "description": "Sound for Chiχ",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/sound.git"
+  },
+  "dependencies": {
+    "alert": "0.x.x"
+  },
+  "nodes": [
+    {
+      "ports": {
+        "input": {
+          "sound": {
+            "title": "Sound",
+            "enum": [
+              "bottle",
+              "glass",
+              "funk",
+              "morse",
+              "purr",
+              "tink",
+              "submarine"
+            ],
+            "default": "bottle"
+          },
+          "volume": {
+            "title": "Volume",
+            "type": "number",
+            "default": 0.5,
+            "format": "range",
+            "step": 0.1,
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "output": {
+          "volume": {
+            "type": "number",
+            "title": "Volume"
+          }
+        }
+      },
+      "require": {
+        "alert": "0.x.x"
+      },
+      "phrases": {
+        "active": "Playing sound alert {{input.sound}}"
+      },
+      "description": "Play a sound alert",
+      "ns": "sound",
+      "name": "alert",
+      "fn": "alert.volume(input.volume);\nalert(input.sound);\noutput.volume = input.volume;\n"
+    }
+  ],
+  "twigs": []
+}

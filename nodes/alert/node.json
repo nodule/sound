@@ -1,0 +1,35 @@
+{
+  "name":"alert",
+  "ns":"sound",
+  "description":"Play a sound alert",
+  "phrases": {
+    "active": "Playing sound alert {{input.sound}}"
+  },
+  "require": {
+    "alert": "0.x.x"
+  },
+  "ports":{
+    "input":{
+      "sound":{
+        "title":"Sound",
+        "enum":["bottle","glass","funk","morse","purr","tink","submarine"],
+        "default": "bottle"
+      },
+      "volume":{
+        "title":"Volume",
+        "type":"number",
+        "default": 0.5,
+        "format": "range",
+        "step": 0.1,
+        "minimum": 0,
+        "maximum": 1
+      }
+    },
+    "output": {
+      "volume": {
+        "type": "number",
+        "title":"Volume"
+      }
+    }
+  }
+}
