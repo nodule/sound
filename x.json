@@ -15,6 +15,7 @@
         "input": {
           "sound": {
             "title": "Sound",
+            "type": "string",
             "enum": [
               "bottle",
               "glass",

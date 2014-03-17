@@ -12,6 +12,7 @@
     "input":{
       "sound":{
         "title":"Sound",
+        "type":"string",
         "enum":["bottle","glass","funk","morse","purr","tink","submarine"],
         "default": "bottle"
       },
