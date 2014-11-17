@@ -11,6 +11,11 @@
   },
   "nodes": [
     {
+      "dependencies": {
+        "npm": {
+          "alert": "0.x.x"
+        }
+      },
       "ports": {
         "input": {
           "sound": {
@@ -43,9 +48,6 @@
             "title": "Volume"
           }
         }
-      },
-      "require": {
-        "alert": "0.x.x"
       },
       "phrases": {
         "active": "Playing sound alert {{input.sound}}"

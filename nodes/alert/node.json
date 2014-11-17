@@ -1,24 +1,29 @@
 {
-  "name":"alert",
-  "ns":"sound",
-  "description":"Play a sound alert",
+  "name": "alert",
+  "ns": "sound",
+  "description": "Play a sound alert",
   "phrases": {
     "active": "Playing sound alert {{input.sound}}"
   },
-  "require": {
-    "alert": "0.x.x"
-  },
-  "ports":{
-    "input":{
-      "sound":{
-        "title":"Sound",
-        "type":"string",
-        "enum":["bottle","glass","funk","morse","purr","tink","submarine"],
+  "ports": {
+    "input": {
+      "sound": {
+        "title": "Sound",
+        "type": "string",
+        "enum": [
+          "bottle",
+          "glass",
+          "funk",
+          "morse",
+          "purr",
+          "tink",
+          "submarine"
+        ],
         "default": "bottle"
       },
-      "volume":{
-        "title":"Volume",
-        "type":"number",
+      "volume": {
+        "title": "Volume",
+        "type": "number",
         "default": 0.5,
         "format": "range",
         "step": 0.1,
@@ -29,8 +34,13 @@
     "output": {
       "volume": {
         "type": "number",
-        "title":"Volume"
+        "title": "Volume"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "alert": "0.x.x"
     }
   }
 }
