@@ -1,3 +1,3 @@
-alert.volume(input.volume);
-alert(input.sound);
-output.volume = input.volume;
+alert.volume($.volume);
+alert($.sound);
+output.volume = $.volume;
