@@ -55,7 +55,7 @@
       "description": "Play a sound alert",
       "ns": "sound",
       "name": "alert",
-      "fn": "alert.volume(input.volume);\nalert(input.sound);\noutput.volume = input.volume;\n"
+      "fn": "alert.volume($.volume);\nalert($.sound);\noutput.volume = $.get('volume');\n"
     }
   ],
   "twigs": []

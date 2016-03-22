@@ -42,11 +42,11 @@ module.exports = {
       alert: require('alert')
     }
   },
-  fn: function alert(input, output, state, done, cb, on, alert) {
+  fn: function alert(input, $, output, state, done, cb, on, alert) {
     var r = function() {
-      alert.volume(input.volume);
-      alert(input.sound);
-      output.volume = input.volume;
+      alert.volume($.volume);
+      alert($.sound);
+      output.volume = $.get('volume');
     }.call(this);
     return {
       output: output,
