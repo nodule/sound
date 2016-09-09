@@ -11,10 +11,11 @@
   },
   "nodes": [
     {
-      "dependencies": {
-        "npm": {
-          "alert": "0.x.x"
-        }
+      "name": "alert",
+      "ns": "sound",
+      "description": "Play a sound alert",
+      "phrases": {
+        "active": "Playing sound alert {{input.sound}}"
       },
       "ports": {
         "input": {
@@ -49,14 +50,12 @@
           }
         }
       },
-      "phrases": {
-        "active": "Playing sound alert {{input.sound}}"
+      "dependencies": {
+        "npm": {
+          "alert": "0.x.x"
+        }
       },
-      "description": "Play a sound alert",
-      "ns": "sound",
-      "name": "alert",
       "fn": "alert.volume($.volume);\nalert($.sound);\noutput.volume = $.get('volume');\n"
     }
-  ],
-  "twigs": []
+  ]
 }
